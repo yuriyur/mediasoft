@@ -1,3 +1,8 @@
+pgdata/
+static/
+city/migrations/
+shop/migrations/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
