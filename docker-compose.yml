@@ -16,11 +16,12 @@ services:
   db:
     image: postgres
     volumes:
-      - ./db:/var/lib/postgresql/data
+      - ./pgdata:/var/lib/postgresql/data
     environment:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+      - PGDATA=/tmp
   web:
     restart: always
     build: .
