@@ -11,7 +11,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends python3  python3-pip  gunicorn  gcc;  rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y --no-install-recommends python3  python3-pip  python3-tk  gunicorn  gcc;  rm -rf /var/lib/apt/lists/*
 
 CMD ["python3"]
 
