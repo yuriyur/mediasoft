@@ -4,6 +4,7 @@ from shop.models import Shop
 class ShopListSerializers(serializers.ModelSerializer):
     class Meta: 
         model = Shop
+        depth = 1
         fields = ('name', 'city', 'street')
 
 class ShopDetailSerializers(serializers.ModelSerializer):

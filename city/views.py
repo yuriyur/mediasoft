@@ -4,6 +4,12 @@ from city.models import City, Street
 
 # Create your views here.
 
+class CityCreateView(generics.CreateAPIView):
+    serializer_class = CityDetailSerializers
+
+class StreetCreateView(generics.CreateAPIView):
+    serializer_class = StreetDetailSerializers
+
 class CityListView(generics.ListAPIView):
     serializer_class = CityDetailSerializers
     queryset = City.objects.all()
