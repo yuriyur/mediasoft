@@ -9,3 +9,6 @@ class Shop(models.Model):
     house = models.PositiveIntegerField(verbose_name='Номер дома')
     time_open = models.TimeField(verbose_name='Время открытия')
     time_close = models.TimeField(verbose_name='Время закрытия')
+    
+    def __str__(self):
+        return self.name
