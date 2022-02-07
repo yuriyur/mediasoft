@@ -1,7 +1,6 @@
 from cgitb import lookup
 from rest_framework import serializers
 from shop.models import Shop
-from city.serializers import CityShopSerializers, StreetShopSerializers
 from django_filters import rest_framework as filters
 from django_filters.rest_framework import DjangoFilterBackend
 import django_filters
@@ -23,8 +22,8 @@ class ShopTimeSerializers(serializers.ModelSerializer):
         fields = ('time_open', 'time_close', )
 
 class ShopFilterSerializers(serializers.ModelSerializer):
-    city = CityShopSerializers()
-    street = StreetShopSerializers()
+    city = serializers.StringRelatedField()
+    street = serializers.StringRelatedField()
 
     class Meta: 
         model = Shop
