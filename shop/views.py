@@ -29,7 +29,7 @@ class ShopFilter(filters.FilterSet):
         if (args[0] == '1'):
             queryset = queryset.filter(time_open__lte=current, time_close__gte=current)
         elif (args[0] == '0'):
-            queryset = queryset.filter(time_open__lte=current, time_close__lte=current)
+            queryset = queryset.filter(time_open__gte=current, time_close__gte=current) | queryset.filter(time_open__lte=current, time_close__lte=current)
         else:
             pass
         return queryset
