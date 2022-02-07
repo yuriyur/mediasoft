@@ -10,3 +10,13 @@ class StreetDetailSerializers(serializers.ModelSerializer):
     class Meta: 
         model = Street
         fields = '__all__'
+
+class CityShopSerializers(serializers.ModelSerializer):
+    class Meta: 
+        model = City
+        fields = ('name', )
+
+class StreetShopSerializers(serializers.ModelSerializer):
+    class Meta: 
+        model = Street
+        fields = ('name', )

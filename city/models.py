@@ -11,7 +11,7 @@ class City(models.Model):
 
 class Street(models.Model):
     name = models.CharField(verbose_name='Улица', max_length=64)
-    city = models.ForeignKey(City, verbose_name='Город', on_delete=models.CASCADE)
+    city_id = models.ForeignKey(City, verbose_name='Город', on_delete=models.CASCADE)
     
     def __str__(self):
         return self.name
