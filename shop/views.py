@@ -1,18 +1,12 @@
 from rest_framework import generics
-from shop.serializers import ShopDetailSerializers, ShopListSerializers, ShopFilterSerializers, ShopTimeSerializers
+from shop.serializers import ShopDetailSerializers, ShopFilterSerializers
 from shop.models import Shop
-from django_filters.rest_framework import DjangoFilterBackend
 from django_filters import rest_framework as filters
 import datetime
 # Create your views here.
 
 class ShopCreateView(generics.CreateAPIView):
     serializer_class = ShopDetailSerializers
-
-
-class ShopListView(generics.ListAPIView):
-    serializer_class = ShopListSerializers
-    queryset = Shop.objects.all()
     
 
 class ShopDetailView(generics.RetrieveUpdateDestroyAPIView):
