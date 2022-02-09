@@ -7,10 +7,6 @@ class ShopDetailSerializers(serializers.ModelSerializer):
         model = Shop
         fields = '__all__'
 
-class ShopTimeSerializers(serializers.ModelSerializer):
-    class Meta: 
-        model = Shop
-        fields = ('time_open', 'time_close', )
 
 class ShopFilterSerializers(serializers.ModelSerializer):
     city = serializers.StringRelatedField()
