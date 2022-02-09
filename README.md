@@ -9,9 +9,9 @@
 Django, Django REST framework.
 Запускается 3 контейнера
 
-mediasoft_nginx - контейнер с nginx
-mediasoft_web - приложение Django REST framework
-mediasoft_db - база данных PostgreSQL
+- mediasoft_nginx - контейнер с nginx
+- mediasoft_web - приложение Django REST framework
+- mediasoft_db - база данных PostgreSQL
 
 ## Подготовительные действия
 Установка:
