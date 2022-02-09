@@ -36,10 +36,10 @@ Django, Django REST framework.
 3. Выполняем миграцию базы данных
 
     ```bash
-    python manage.py makemigrations 
+    docker exec -it mediasoft_web_1 python3 manage.py makemigrations
     ```
     ```bash
-    python manage.py migrate
+    docker exec -it mediasoft_web_1 python3 manage.py migrate
     ```
 ## Использование
 
