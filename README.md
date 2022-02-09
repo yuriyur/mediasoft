@@ -43,12 +43,12 @@ Django, Django REST framework.
     ```
 ## Использование
 
-http://localhost/api/v1/city/ - все города 
-http://localhost/api/v1/city/create - создать город
-http://localhost/api/v1/city/street - все улицы
-http://localhost/api/v1/city/street/create - создать улицу
-http://localhost/api/v1/city/1/street - фильтр улиц по городу 
-http://localhost/api/v1/shop/ - все магазины
-http://localhost/api/v1/shop/create - создать магазин
-http://localhost/api/v1/shop/edit/1/ - редактировать магазин
-http://localhost/api/v1/shop/?street=1&city=1&open=1 - фильтр магазинов
+- http://localhost/api/v1/city/ - все города 
+- http://localhost/api/v1/city/create - создать город
+- http://localhost/api/v1/city/street - все улицы
+- http://localhost/api/v1/city/street/create - создать улицу
+- http://localhost/api/v1/city/1/street - фильтр улиц по городу 
+- http://localhost/api/v1/shop/ - все магазины
+- http://localhost/api/v1/shop/create - создать магазин
+- http://localhost/api/v1/shop/edit/1/ - редактировать магазин
+- http://localhost/api/v1/shop/?street=1&city=1&open=1 - фильтр магазинов
